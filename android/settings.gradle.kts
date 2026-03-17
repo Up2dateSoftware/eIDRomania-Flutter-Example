@@ -28,7 +28,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        // eIDRomania Android SDK
+        // Flutter engine artifacts
+        maven {
+            url = uri("https://storage.googleapis.com/download.flutter.io")
+        }
+        // eIDRomania Android SDK (public — no credentials required)
         maven {
             url = uri("https://europe-west1-maven.pkg.dev/eid-romania/eid-romania-sdk")
         }
